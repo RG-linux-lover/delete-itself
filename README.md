@@ -1,7 +1,7 @@
 # delete-itself
 The script can delete itself via the shred command (as a secure deletion) when it exits.
 
-
+```
 #!/bin/bash
 
 currentscript="$0"
@@ -15,3 +15,4 @@ function finish {
 
 # When your script is finished, exit with a call to the function, "finish":
 trap finish EXIT
+```
